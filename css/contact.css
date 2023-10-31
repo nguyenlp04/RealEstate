@@ -1,0 +1,77 @@
+.box-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.item-box{
+    width: 48%;
+    /* background-color: #cf6b6b; */
+}
+.title-company-contact h1{
+    font-size: 16px;
+}
+.item-box .descript,
+.box-contact ul li{
+    font-size: 14px;
+    color: #434a6e;
+}
+
+.box-contact i {
+    margin-right: 10px;
+
+}
+
+.box-contact {
+    margin-top: 30px;
+}
+.social{
+    display: flex;
+    margin-top: 30px;
+}
+.social i{
+    background-color:#E9E9F3;
+    margin: 0 8px;
+    width: 35px;
+    height: 35px;
+    color: #434a6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.item-box textarea{
+    width: 90%;
+    border: 1px solid #d7d9dc;
+    padding: 10px 20px;
+
+}
+.item-box input{
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #d7d9dc;
+}
+.item-box .row-input{
+    /* margin: 0 15px; */
+    width: 40%;
+}
+.item-box .input1{
+    margin-right: 8px;
+}
+.item-box .input2{
+    margin-left: 8px;
+}
+.item-box .phone{
+    width: 90%;
+    margin: 20px 0;
+}
+.item-box button{
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    border-radius: 3px;
+    background-color: #35bf76;
+}

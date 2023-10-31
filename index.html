@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59847bd5e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+        .header-menu .main-menu li a.active {
+            color: #444ce7;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-section sticky">
+        <nav class="nav">
+            <div class="container">
+                <!-- Header Wrap Start  -->
+                <div class="header-wrap">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="header-menu">
+                        <ul class="main-menu">
+                            <li><a href="#" class="active">Trang Chủ</a></li>
+                            <li><a href="introduce.html">Giới Thiệu</a></li>
+                            <li><a href="products.html">Sản Phẩm</a></li>
+                            <li><a href="news.html">Tin Tức</a></li>
+                            <li><a href="contact.html">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-meta">
+                        <a href="#contact" class="btn btn-outline me-3">Login</a>
+                        <a href="#contact" class="btn btn-primary">Sign Up</a>
+                        <!-- Header Toggle Start -->
+                        <div class="header-toggle d-lg-none">
+    
+                        </div>
+                        <!-- Header Toggle End -->
+                    </div>
+                </div>
+                <!-- Header Wrap End  -->
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="./img/banner.jpeg" alt="hero-bg image" class="hero-bg" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Mua và bán tài sản một cách nhanh chóng</h1>
+                        <p class="hero__desc">Khám phá các căn hộ mới, bất động sản, nhà và đất, thiết kế nhà, nhà xây dựng
+                            và nhiều nhà xây dựng căn hộ khác.</p>
+                        <div class="counter__wrapper">
+                            <div class="counter">
+                                <h3 class="counter__number"><span class="num">1200</span><span class="suffix">+</span></h3>
+                                <h5 class="counter__title">Sản phẩm cao cấp</h5>
+                            </div>
+                            <div class="counter">
+                                <h3 class="counter__number"><span class="num">15</span><span class="suffix">+</span></h3>
+                                <h5 class="counter__title">Số năm kinh nghiệm</h5>
+                            </div>
+                            <div class="counter">
+                                <h3 class="counter__number"><span class="num">146</span><span class="suffix">+</span></h3>
+                                <h5 class="counter__title">Giải thưởng</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEAECH -->
+    <div class="advance-search__wraper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="advance-search">
+                        <form action="#" class="inline-form">
+                            <div class="search__type">
+                                <input type="radio" name="search-type" id="searchRent" value="rent" checked />
+                                <label for="searchRent">Thuê</label>
+    
+                                <input type="radio" name="search-type" id="searchBuy" value="buy" />
+                                <label for="searchBuy">Mua</label>
+    
+                                <input type="radio" name="search-type" id="searchSell" value="sell" />
+                                <label for="searchSell">Bán</label>
+                            </div>
+                            <div class="input-group">
+                                <label for="city">Vị trí</label>
+                                <input name="city" id="city" type="text" placeholder="Đà Nẵng" class="myInput" ondrop="drop(event)" ondragover="allowDrop(event)"/>
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="apantment">Loại</label>
+                                <select name="apantment" id="apantment">
+                                    <option value="">Biệt thự</option>
+                                    <option value="1">Nhà ở thương mại</option>
+                                    <option value="2">Nhà ở chung cư</option>
+                                </select>
+                                <div class="icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="price">Ngân sách</label>
+                                <select name="price" id="price">
+                                    <option value="500-800">$5,000.00 - $15,000.00</option>
+                                    <option value="800-1000">$15,000.00 - $30,000.00</option>
+                                    <option value="1000-1500">$30,000.00 - $50,000.00</option>
+                                    <option value="1000-1500">Trên $50,000.00</option>
+                                </select>
+                                <div class="icon">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <button class="btn btn-primary" type="submit">Search Now</button>
+                            </div>
+                        </form>
+                        
+                       <div class="suggest">
+                        <p>Gợi ý: </p>
+                        <span draggable="true" ondragstart="dragStart(event)">Hà Nội</span>
+                        <span draggable="true" ondragstart="dragStart(event)">Đà Nẵng</span>
+                        <span draggable="true" ondragstart="dragStart(event)">Nha Trang</span>
+                       </div> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PHỔ BIẾN -->
+    <section class="houses" id="houses">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__content">
+                    <h4 class="sub-title">PHỔ BIẾN</h4>
+                    <h2 class="title">Ngôi Nhà Phổ Biến</h2>
+                </div>
+                <div class="section-header__action">
+                    <a href="#">Xem Tất Cả </a><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="house-card">
+                            <div class="house__thumb">
+                                <img src="./img/house-01.jpeg" alt="house-01" />
+                                <div class="house__meta">
+                                    <a href="#">Bất Động Sản</a>
+                                </div>
+                            </div>
+    
+                            <div class="house__content">
+                                <div class="house__content__top">
+                                    <h4 class="price">$4,600.00</h4>
+                                    <span class="status">Thuê</span>
+                                </div>
+                                <div class="house__content__main">
+                                    <h3 class="title"><a href="#">Nhà Ở Chung Cư</a></h3>
+                                    <p class="location">
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <span>Đại Dương, Đa Tốn, Gia Lâm, Hà Nội</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="house__content__bottom">
+                                <div class="info-wrap">
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-house"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-tunnel"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info info-right">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-vector-square"></i>
+                                        </div>
+                                        <span>3000 M<sup>2</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="house-card">
+                            <div class="house__thumb">
+                                <img src="./img/house-02.jpeg" alt="house-02" />
+                                <div class="house__meta">
+                                    <a href="#">Bất Động Sản</a>
+                                </div>
+                            </div>
+    
+                            <div class="house__content">
+                                <div class="house__content__top">
+                                    <h4 class="price">$4,600.00</h4>
+                                    <span class="status">Thuê</span>
+                                </div>
+                                <div class="house__content__main">
+                                    <h3 class="title"><a href="#">Nhà Ở Chung Cư</a></h3>
+                                    <p class="location">
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <span>Đại Dương, Đa Tốn, Gia Lâm, Hà Nội</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="house__content__bottom">
+                                <div class="info-wrap">
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-house"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-tunnel"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info info-right">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-vector-square"></i>
+                                        </div>
+                                        <span>3000 M<sup>2</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="house-card">
+                            <div class="house__thumb">
+                                <img src="./img/house-03.jpeg" alt="house-03" />
+                                <div class="house__meta">
+                                    <a href="#">Bất Động Sản</a>
+                                </div>
+                            </div>
+    
+                            <div class="house__content">
+                                <div class="house__content__top">
+                                    <h4 class="price">$4,600.00</h4>
+                                    <span class="status">Thuê</span>
+                                </div>
+                                <div class="house__content__main">
+                                    <h3 class="title"><a href="#">Nhà Ở Chung Cư</a></h3>
+                                    <p class="location">
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <span>Đại Dương, Đa Tốn, Gia Lâm, Hà Nội</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="house__content__bottom">
+                                <div class="info-wrap">
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-house"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-tunnel"></i>
+                                        </div>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="info info-right">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-vector-square"></i>
+                                        </div>
+                                        <span>3000 M<sup>2</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US -->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="section-banner combain">
+                        <div class="short-img">
+                            <img src="./img/about-short.jpeg" alt="about short image" />
+                            <a data-fancybox href="https://youtu.be/7EHnQ0VM4KY" class="playBtn">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                        </div>
+                        <div class="big-img">
+                            <img src="./img/about-big.jpeg" alt="about bit image" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-5">
+                    <div class="section-header__content v2">
+                        <h4 class="sub-title">VỀ CHÚNG TÔI</h4>
+                        <h2 class="title">Kinh Nghiệm Cho Thuê Nhà Lâu Dài</h2>
+                        <p class="text">
+                            Một cộng đồng hoàn toàn mới có các căn hộ cao cấp và tiện nghi đầy phong cách tại một trong
+                            những địa điểm năng động nhất của Việt Nam. Từ bên bờ biển đến bên thành phố hoặc bên hồ bơi đến
+                            bên lò sưởi, đây là nơi lối sống và vị trí phù hợp hoàn hảo.
+                        </p>
+    
+                        <a href="#" class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ĐÁNH GIÁ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__content">
+                    <h4 class="sub-title">ĐÁNH GIÁ</h4>
+                    <h2 class="title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+                </div>
+                <div class="section-header__action">
+    
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper testimonialSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="testimonial swiper-slide">
+                                    <div class="testimonial__header">
+                                        <div class="avater">
+                                            <img src="./img/avater-01.jpeg" alt="testimonial-1" />
+                                        </div>
+                                        <div class="user-info">
+                                            <h5 class="name">Nicolas</h5>
+                                            <h6 class="designation">Web Developer</h6>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__body">
+                                        <p class="content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis
+                                            accusamus molestias quo ea at suscipit, eveniet quae, dicta quod minima itaque
+                                            et. Optio facere quae atque, ratione dolorum harum!
+                                        </p>
+                                        <p class="meta">Tuesday 19 June, 2022</p>
+                                    </div>
+                                </div>
+    
+                                <div class="testimonial swiper-slide">
+                                    <div class="testimonial__header">
+                                        <div class="avater">
+                                            <img src="./img/avater-02.jpeg" alt="testimonial-2" />
+                                        </div>
+                                        <div class="user-info">
+                                            <h5 class="name">Mariya Deo</h5>
+                                            <h6 class="designation">Designer</h6>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__body">
+                                        <p class="content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis
+                                            accusamus molestias quo ea at suscipit, eveniet quae, dicta quod minima itaque
+                                            et. Optio facere quae atque, ratione dolorum harum!
+                                        </p>
+                                        <p class="meta">Tuesday 19 June, 2022</p>
+                                    </div>
+                                </div>
+    
+                                <div class="testimonial swiper-slide">
+                                    <div class="testimonial__header">
+                                        <div class="avater">
+                                            <img src="./img/avater-03.jpeg" alt="testimonial-3" />
+                                        </div>
+                                        <div class="user-info">
+                                            <h5 class="name">Jhon Smith</h5>
+                                            <h6 class="designation">Web Developer</h6>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__body">
+                                        <p class="content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis
+                                            accusamus molestias quo ea at suscipit, eveniet quae, dicta quod minima itaque
+                                            et. Optio facere quae atque, ratione dolorum harum!
+                                        </p>
+                                        <p class="meta">Tuesday 19 June, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__content">
+                    <h4 class="sub-title">Blog</h4>
+                    <h2 class="title">Tin Tức Bất Động Sản Mới Nhất</h2>
+                </div>
+                <div class="section-header__action">
+                    <a href="#"
+                        >Xem Tất Cả <span class="icon"><i class="fa-solid fa-arrow-right"></i></span
+                    ></a>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <div class="blog__thumb">
+                                <a href="#">
+                                    <img src="./img/house-01.jpeg" alt="blog-1" />
+                                </a>
+                            </div>
+
+                            <div class="blog__meta">
+                                <a href="#" class="date">Thứ Fri, 17/08/2018</a>
+                                <!-- <span class="category">Auto mobile</span>
+                                <span class="tags">Auto, mobile</span> -->
+                            </div>
+                            <div class="blog__content">
+                                <h4 class="title"><a href="#">Xuất hiện căn hộ cao cấp làm mê mẩn giới thượng lưu</a></h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui cras adipiscing non odio elementum. Quis urna, tristique amet sit libero.</p> -->
+                                <a href="#" class="btn btn-secondary btn-more">Đọc Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <div class="blog__thumb">
+                                <a href="#">
+                                    <img src="./img/house-02.jpeg" alt="blog-2" />
+                                </a>
+                            </div>
+
+                            <div class="blog__meta">
+                                <a href="#" class="date">Thứ Fri, 17/08/2018</a>
+                            </div>
+                            <div class="blog__content">
+                                <h4 class="title"><a href="#">Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai</a></h4>
+                                <a href="#" class="btn btn-secondary btn-more">Đọc Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <div class="blog__thumb">
+                                <a href="#">
+                                    <img src="./img/house-03.jpeg" alt="blog-3" />
+                                </a>
+                            </div>
+
+                            <div class="blog__meta">
+                                <a href="#" class="date">Thứ Fri, 17/08/2018</a>
+                            </div>
+                            <div class="blog__content">
+                                <h4 class="title"><a href="#">Buổi gặp gỡ cộng đồng cư dân danh giá tương lai của dự án Dragon Fairy</a></h4>
+                                <a href="#" class="btn btn-secondary btn-more">Đọc Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="widget">
+                        <a href="#" class="logo">
+                            <img src="./img/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h5 class="widget__title">THÔNG TIN LIÊN HỆ</h5>
+                        <ul class="widget__list">
+                            <li>TT. Gio Linh, Gio Linh, Quảng Trị 520000, Việt Nam</li>
+                            <li>0763 636 535</li>
+                            <li>lphuonguye.ecn.2182004@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h5 class="widget__title">LIÊN KẾT</h5>
+                        <ul class="widget__list">
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h5 class="widget__title">HỖ TRỢ</h5>
+                        <ul class="widget__list">
+                            <li>Chính sách</li>
+    
+                            <li>Tư vấn khách hàng</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__wrapper">
+                <p class="text">Copyright © 2023 All Rights Reserved</p>
+                <img class="payment-image" src="./img/payment.png" alt="payment-image" />
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
